@@ -1,0 +1,29 @@
+server:
+  port: 8080
+
+
+spring:
+  datasource:
+    driver-class-name:  com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/user
+    username: root
+    password: root
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+      shou-sql: true
+
+  mvc:
+    view:
+      suffix: .jsp
+      prefix: /WEB-INF/jsp/
+  thymeleaf:
+    cache: false
+    enabled: false
+
+
+
+
+
+
